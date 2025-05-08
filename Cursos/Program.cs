@@ -7,7 +7,7 @@ class Estudiante // Aplicación de la POO: Clase
 {
     // Propiedades públicas con getters y setters (Encapsulamiento)
     public int Id { get; set; }
-    public string NombreCompleto { get; set; }
+    public string NombreCompleto { get; set; } //metodos para controlar el acceso a los atributos de una clase
     public string CorreoElectronico { get; set; }
 }
 
