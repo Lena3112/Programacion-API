@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro</title>
+    <link rel="stylesheet" href="/static/register.css">
+</head>
+<body>
+   
+    <h2>Registro</h2>
+   
+     <div class="container">
+    <form method="post">
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre" required><br>
+        <label>Correo:</label><br>
+        <input type="email" name="correo" required><br>
+        <label>Teléfono:</label><br>
+        <input type="text" name="telefono" required><br>
+        <label>Contraseña:</label><br>
+        <input type="password" name="password" required><br><br>
+         {% if error %}
+          <p style="color: white; background-color: #f35847; padding: 10px; border-radius: 5px; font-weight: bold; width: 330px; margin-left: 25px;">
+        {{ error }}
+    </p>
+    {% endif %}
+        <button type="submit">Registrarse</button>
+         <p>¿Ya tienes cuenta? <a href="/login">Inicia sesión</a></p>
+
+    </form>
+    </div>
+</body>
+</html>
